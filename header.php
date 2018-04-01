@@ -49,15 +49,27 @@
  
             <div id="access" class="header">
 				<!--<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'hbd-theme' ) ?>"><?php _e( 'Skip to content', 'hbd-theme' ) ?></a></div>-->
-				<?php #wp_page_menu( 'sort_column=menu_order' ); ?>
-                <div id="logo-container">
-                    <img src="/heroeshype/wp-content/themes/heroeshype/img/hh_logo.png" width="75" height="75" alt="" />
-                    <h1>
-                    Heroes<br />
-                    Hype
-                    </h1>
+                <?php #wp_page_menu( 'sort_column=menu_order' ); ?>
+                <div id="site-nav-container">
+                    <a class="logo-link" href="<?php echo get_bloginfo('url') ?>">
+                        <div id="logo-container">
+                            <img src="<?php echo get_bloginfo('template_url') ?>/img/hh_logo.png" width="75" height="75" alt="" />
+                            <!-- <img src="/heroeshype/wp-content/themes/heroeshype/img/hh_logo.png" width="75" height="75" alt="" /> -->
+                            <h1>
+                            Heroes<br />
+                            Hype
+                            </h1>
+                        </div>
+                    </a>
+                    <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header', 'menu' => 'Header navigation' ) ); ?>
                 </div>
-				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header', 'menu' => 'Header navigation' ) ); ?>
+                <div id="search-container">
+                    <?php get_search_form(true); ?>
+                    <div class="hgc">
+                        <span>Proud partner with</span>
+                        <img src="<?php echo get_bloginfo('template_url') ?>/img/hgc_od_logo.png" width="65" height="65" alt="" />
+                    </div>
+                </div>
             </div><!-- #access -->
  			
         </div><!-- #masthead -->
