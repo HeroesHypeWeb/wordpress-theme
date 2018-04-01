@@ -13,6 +13,11 @@ This repository contains all the Wordpress files and assets used on heroeshype.c
 
 At this point, you should have a running local instance of heroeshype.com, with the latest posts/pages/content.
 
+## Plugins
+There are a few plugins that are required to get full functionality for the site.
+- Widget Context: Allows for conditional placement of right-side widgets per page.
+- Events Manager: Runs our Event pages and functionality.
+
 ## Development
 - All development should take place in themes > heroeshype. **Do not edit any files outside of the theme.**
 
