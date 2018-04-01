@@ -1,0 +1,471 @@
+/*
+Theme Name: HeroesHype
+Author: HeroesHype
+Author URI: http://heroeshype.com
+Version: 0.1
+Tags: heroeshype
+ 
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800');
+/**
+
+COLOR PALETTE:
+
+Dark Purple: #6950A1
+Light Purple: #9287C0
+Dark Grey: #222222
+
+**/
+
+/*** GLOBAL : GENERAL STYLE DEFAULTS ***/
+* {
+	box-sizing: border-box;
+}
+html
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #222222;
+	margin: 0;
+}
+body, input, textarea
+{
+	color: #fff;    
+	font-family: 'Montserrat', Arial, sans-serif;
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6
+{ 
+	clear: both;
+}
+hr
+{
+	background-color: #999;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+pre
+{
+	font: 11px Monaco, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+}
+code
+{
+	font: 11px Monaco, monospace;
+}
+p
+{
+	margin: 4px 0 12px 0;
+}
+a
+{
+	color: #9287C0;
+}
+a:hover
+{
+	color: #9287C0;
+}
+a:visited
+{
+	color: #9287C0;
+}
+
+
+
+/*** PAGE LAYOUT ***/
+
+/* Styles that affect the entire layout of the page */
+div#container
+{
+	margin-top: 2em;
+}
+div#content
+{
+	
+}
+
+
+/*** HEADER : MENU ***/
+
+/* To see a menu in your header, you'll need to first add one in WordPress Admin */
+.menu ul
+{
+    list-style: none;
+    margin: 0;
+}
+.menu ul ul
+{
+    display: none;
+}
+.menu li
+{
+    display: inline;
+    float: left;
+	padding: 0 8px 0 4px;
+}
+.menu-item
+{
+	position: relative;
+}
+.menu-item a
+{
+	font-size: .9em;
+	font-weight: 600;
+	margin: 0 1em;
+	text-decoration: none;
+	color: #9287C0;
+	transition: color .15s linear;
+}
+.menu-item a:hover
+{
+	color: #fff;
+}
+
+.menu-item .sub-menu {
+	padding-top: .25em;
+	max-height: 0;
+	padding-left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	transition: max-height .15s linear;
+}
+
+.menu-item:hover .sub-menu {
+	max-height: 5em;
+}
+
+.current-menu-item a,
+.current-menu-parent a
+ {
+	color: #fff;
+	border-bottom: 2px solid #6950A1;
+}
+
+.sub-menu li {
+	background-color: #333;
+	margin-top: .25em;
+	width: 100%;
+}
+
+.sub-menu a {
+	border: 0;
+	display: block;
+	padding: .5em 0;
+	width: 100%;
+}
+
+
+/*** HEADER : OTHER ***/
+
+
+
+/*** CONTENT : POSTS AND PAGES ***/
+
+/* Entry and Page Titles */
+h1.entry-title
+{
+	
+}
+h2.entry-title
+{
+	
+}
+h2.entry-title a
+{
+	
+}
+h1.page-title
+{
+	
+}
+
+/* Media Alignment */
+.alignright
+{
+	/* Style for right-aligned images in posts */
+	padding: 8px 0 8px 8px;
+	float: right;
+}
+.alignleft
+{
+	/* Style for left-aligned images in posts */
+	padding: 8px 8px 8px 0;
+	float: left;
+}
+
+/* Entry Content */
+.entry-content
+{
+	/* Style that affects actual entry/post content */
+}
+.entry-content a
+{
+	
+}
+.entry-content a:hover
+{
+	
+}
+.entry-content h1, h2, h3, h4, h5
+{
+	
+}
+.entry-content ol li
+{
+	
+}
+
+.entry-utility
+{
+	/* Style for the entry utility, which sits below a post and provides info like categories, tags, feeds, and an edit link (for authors) */
+}
+.entry-meta
+{
+	/* Style for the entry metadata (author, etc.) */
+}
+.skip-link
+{
+	/* Style for the skip link */
+	/*position: absolute;
+	left: -9000px;*/
+}
+.navigation
+{
+	/* Style for the navigation links (next/previous post) on a given post */
+}
+
+
+/*** CONTENT : COMMENTS ***/
+
+div#comments
+{
+	/* Style that affects the DIV containing all the comments */
+}
+.comments h3
+{
+	/* H3 header style for comments */
+}
+.comments ol
+{
+	/* Comments are displayed as ordered lists by default, so you want to style that list so it looks the way you want */
+}
+.comments ol li
+{
+	/* Style each list item in the comments ordered list */
+}
+.comments img
+{
+	/* Style for the user avatar beside each comment */
+	float: left;
+	margin: 0 12px 8px 0;
+}
+.comments .comment
+{
+	/* Style that applies to each individual comment in a series of comments */
+}
+
+.children ul li
+{
+	/* A style that refers to the children (as in, responses to) any given comment */
+}
+
+.comment-reply-link
+{
+	/* Style for the "Reply" link on a comment */
+}
+.comment-meta
+{
+	/* Style for metadata for a comment */
+}
+div#respond
+{
+	/* DIV that contains the comment response form */
+}
+div#respond h3
+{
+	/* H3 header for the comment response form */
+}
+
+
+/*** CONTENT : SIDEBAR ***/
+div#primary
+{
+	/* Primary Widget Area DIV */
+	width: 25%;
+}
+div#secondary
+{
+	/* Secondary Widget Area DIV */
+}
+.widget-container
+{
+	margin-bottom: 2em;
+}
+.widget-area .announcement {
+	background-color: #6950A1;
+	padding: 1em 1em 1.5em;
+	font-size: .8em;
+}
+.widget-title {
+	color: #6ecef4;
+	margin: .5em 0;
+}
+.widget-subtitle {
+	font-weight: 500;
+	font-size: 1em;
+	color: #9287C0;
+	margin: 0 0 .75em 0;
+}
+.widget-content {
+	background-color: #333;
+	padding: 1em;
+}
+.widget-content p {
+	font-size: .85em;
+	margin: 0;
+}
+.widget-cta {
+	display: block;
+	width: 100%;
+	background-color: #222;
+	padding: .5em;
+	box-sizing: border-box;
+	margin-top: 1.5em;
+	text-align: center;
+	color: #9287C0;
+	text-decoration: none;
+	font-size: .9em;
+}
+.xoxo
+{
+	/* Class that applies to each item in each widget area (an unordered list class) */
+	list-style: none;
+}
+
+
+/*** FOOTER ***/
+div#footer
+{
+	float: left;
+	clear: both;
+}
+
+
+/*** YOUR CSS ***/
+
+#wrapper {
+	padding: 1em 2em;
+}
+
+#container {
+	display: flex;
+	margin: 0 auto;
+	max-width: 100em;
+}
+
+#content {
+	width: 75%;
+}
+
+#logo-container {
+	display: flex;
+	align-items: center;
+}
+
+#logo-container h1 {
+	font-size: 1.5em;
+	line-height: .85;
+	margin-left: .25em;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+}
+
+#footer {
+	font-size: .8em;
+	width: 100%;
+	text-align: center;
+}
+
+#menu-footer {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.copyright {
+	font-weight: 600;
+	margin: 0 1em;
+	color: #9287C0;
+}
+
+#global-alert {
+	background-color: #6950A1;
+	padding: 1.5em;
+	text-align: center;
+	width: 100%;
+}
+
+#global-alert a {
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.icon-live::after {
+	display: inline-block;
+	content: '';
+	width: 5px;
+	height: 5px;
+	background-color: red;
+	border-radius: 100%;
+	vertical-align: text-top;
+	margin-right: .5em;
+	box-shadow: 0 0 5px red;
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+	    opacity: .4;
+	}
+	40% {
+	    opacity: 1;
+	}
+	60% {
+	    opacity: 1;
+	}
+	100% {
+		opacity: .4;
+	}
+  }
+
+  .stream {
+	display: flex;
+	align-items: center;
+  }
+  .stream .fa-twitch {
+	  color: #111;
+	  margin-right: .5em;
+	  font-size: 2em;
+  }
+  .stream + .stream {
+	  margin-top: 1em;
+  }
+  .stream .widget-subtitle {
+	  margin-bottom: 0;
+  }
+  .stream a {
+	  text-decoration: none;
+  }
+  .stream p {
+	  color: #9c92ac;
+  }
