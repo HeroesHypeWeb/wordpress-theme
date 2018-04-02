@@ -119,11 +119,11 @@ div#content
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
-	transition: max-height .15s linear;
+	transition: max-height .15s ease-in;
 }
 
 .menu-item:hover .sub-menu {
-	max-height: 5em;
+	max-height: 8em;
 }
 
 .current-menu-item a,
@@ -135,7 +135,7 @@ div#content
 
 .sub-menu li {
 	background-color: #333;
-	margin-top: .25em;
+	margin-top: .1em;
 	width: 100%;
 }
 
@@ -514,6 +514,7 @@ div#footer
 
 h2 {
 	color: #9287C0;
+	margin-top: 0;
 }
 
 .social-icons {
@@ -533,7 +534,7 @@ h2 {
 }
 
 .widget_em_widget li {
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 }
 
 .tournament-widget {
@@ -577,4 +578,99 @@ h2 {
 	padding: .5em 0;
 	color: #999;
 	border: 1px solid #999;
+}
+
+.standings {
+	width: 100%;
+	color: #999;
+	border-collapse: collapse;
+	font-size: .9em;
+}
+
+.standings tr {
+	background-color: #333;
+	border-bottom: 2px solid #222;
+}
+
+.standings tr:last-child {
+	border-bottom: 0;
+}
+
+.standings td,
+.standings th {
+	padding: .5em .75em;
+}
+
+.standings tr td {
+	text-align: center;
+}
+
+.standings tr td:first-child {
+	font-weight: 700;
+	text-align: left;
+	color: #9287C0;
+}
+
+.standings tr th:first-child {
+	font-weight: 700;
+	text-align: left;
+}
+
+.standings tr td:last-child {
+	text-align: right;
+	font-weight: 700;
+	color: #9287C0;
+}
+
+.standings tr th:last-child {
+	text-align: right;
+	font-weight: 700;
+}
+
+.standings thead {
+	border-bottom: 1px solid #9287C0;
+	color: #6ecef4;
+}
+
+.standings thead tr {
+	border-bottom: 0;
+}
+
+.standings thead tr:first-child th:first-child div {
+	visibility: hidden;
+}
+.standings-mini {
+	font-size: .8em;
+}
+.standings-mini thead {
+	display: none;
+}
+
+.standings-mini-header {
+	display: flex;
+	justify-content: space-between;
+	font-size: .8em;
+	font-weight: 700;
+	color: #6ecef4;
+	padding: 1em .5em .5em;
+	background-color: #333;
+	border-bottom: 2px solid #9287C0;
+}
+
+.standings-mini-header ~ p {
+	display: none;
+}
+
+.standings-mini-footer {
+	padding: .75em .5em .5em;
+	background-color: #333;
+	width: 100%;
+	border-top: 2px solid #222;
+}
+
+.standings-mini-footer a {
+	font-size: .8em;
+	font-weight: 700;
+	color: #6ecef4;
+	text-decoration: none;
 }
