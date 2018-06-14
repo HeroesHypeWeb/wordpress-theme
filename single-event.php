@@ -10,7 +10,7 @@
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 					
 					<div class="entry-content">
-                        <?php $key="toornament_id"; echo get_post_meta($post->ID, $key, true) ?>
+                        
 						<?php the_content(); ?>
 						<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'hbd-theme' ) . '&after=</div>') ?>
 					</div><!-- .entry-utility -->
@@ -23,24 +23,18 @@
 					                        the_title_attribute('echo=0'),
 					                        comments_rss() ) ?> -->
 
-<!-- {                        <?php if ( ('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Comments and trackbacks open ?>
-                                                <?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'hbd-theme' ), get_trackback_url() ) ?>
-                        <?php elseif ( !('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Only trackbacks open ?>
-                                                <?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'hbd-theme' ), get_trackback_url() ) ?>
-                        <?php elseif ( ('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // Only comments open ?>
-                                                <?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'hbd-theme' ) ?>
-                        <?php elseif ( !('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // Comments and trackbacks closed ?>
-                                                <?php _e( 'Both comments and trackbacks are currently closed.', 'hbd-theme' ) ?>
-                        <?php endif; ?>
-                        <?php edit_post_link( __( 'Edit', 'hbd-theme' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>} -->
-                </div><!-- #post-<?php the_ID(); ?> -->           
+
+                    <?php if ( get_post_meta($post->ID, 'toornament_id', true) && get_post_meta($post->ID, 'toornament_stage_id', true) ) : // Comments and trackbacks open ?>
+                      
+                      <iframe width="100%" height="900" src="https://widget.toornament.com/tournaments/<?php $key="toornament_id"; echo get_post_meta($post->ID, $key, true) ?>/stages/<?php $key="toornament_stage_id"; echo get_post_meta($post->ID, $key, true) ?>/?_locale=en_US" frameborder="0" allowfullscreen="true"></iframe>
+                    <?php endif; ?>
+
+                </div><!-- #post-<?php the_ID(); ?> -->
  
                 <!-- <div id="nav-below" class="navigation">
 						<?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?> <span style="color: #bbb;">&#8226;</span> <?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?>
                 </div> -->
                 <!-- #nav-below -->     
-            
- 				<?php comments_template('', true); ?>
 
             </div><!-- #content -->
         </div><!-- #container -->

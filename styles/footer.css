@@ -1,0 +1,28 @@
+/*** FOOTER ***/
+div#footer
+{
+
+}
+.menu-footer {
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+	font-size: .8em;
+	width: 100%;
+	text-align: center;
+}
+
+#menu-footer {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.copyright {
+	font-weight: 600;
+	margin: 0 1em;
+	color: #9287C0;
+}

@@ -1,0 +1,266 @@
+/*** GLOBAL : GENERAL STYLE DEFAULTS ***/
+* {
+	box-sizing: border-box;
+}
+html
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #222222;
+	margin: 0;
+}
+body, input, textarea
+{
+	color: #fff;    
+	font-family: 'Montserrat', Arial, sans-serif;
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6
+{ 
+	clear: both;
+}
+hr
+{
+	background-color: #999;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+pre
+{
+	font: 11px Monaco, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+}
+code
+{
+	font: 11px Monaco, monospace;
+}
+p
+{
+	margin: 4px 0 12px 0;
+}
+
+
+
+/*** PAGE LAYOUT ***/
+
+/* Styles that affect the entire layout of the page */
+div#container
+{
+	margin-top: 2em;
+}
+div#content
+{
+	
+}
+
+
+/*** HEADER : MENU ***/
+
+/* To see a menu in your header, you'll need to first add one in WordPress Admin */
+.menu ul
+{
+    list-style: none;
+    margin: 0;
+}
+.menu ul ul
+{
+    display: none;
+}
+.menu li
+{
+    display: inline;
+    float: left;
+	padding: 0 8px 0 4px;
+}
+.menu-item
+{
+	position: relative;
+}
+.menu-item a
+{
+	font-size: .9em;
+	font-weight: 600;
+	margin: 0 1em;
+	text-decoration: none;
+	color: #9287C0;
+	transition: color .15s linear;
+}
+.menu-item a:hover
+{
+	color: #fff;
+}
+
+.menu-item .sub-menu {
+	padding-top: .25em;
+	max-height: 0;
+	padding-left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+    transition: max-height .15s ease-in;
+    min-width: 15em;
+}
+
+.menu-item:hover .sub-menu {
+	max-height: 10em;
+}
+
+.current-menu-item a,
+.current-menu-parent a
+ {
+	color: #fff;
+	border-bottom: 2px solid #6950A1;
+}
+
+.sub-menu li {
+	background-color: #333;
+	margin-top: .1em;
+	width: 100%;
+}
+
+.sub-menu a {
+	border: 0;
+	display: block;
+	padding: .5em .25em;
+	width: 100%;
+	color: #fff;
+	margin: 0;
+}
+
+
+/*** HEADER : OTHER ***/
+
+
+
+/*** CONTENT : POSTS AND PAGES ***/
+
+/* Entry and Page Titles */
+h1.entry-title
+{
+	
+}
+h2.entry-title
+{
+	
+}
+h2.entry-title a
+{
+	
+}
+h1.page-title
+{
+	
+}
+
+/* Media Alignment */
+.alignright
+{
+	/* Style for right-aligned images in posts */
+	padding: 8px 0 8px 8px;
+	float: right;
+}
+.alignleft
+{
+	/* Style for left-aligned images in posts */
+	padding: 8px 8px 8px 0;
+	float: left;
+}
+
+/* Entry Content */
+.entry-content
+{
+	/* Style that affects actual entry/post content */
+}
+.entry-content a
+{
+	
+}
+.entry-content a:hover
+{
+	
+}
+.entry-content h1, h2, h3, h4, h5
+{
+	
+}
+
+.entry-content ol li
+{
+	
+}
+
+.entry-utility
+{
+	/* Style for the entry utility, which sits below a post and provides info like categories, tags, feeds, and an edit link (for authors) */
+}
+.entry-meta
+{
+	/* Style for the entry metadata (author, etc.) */
+}
+.skip-link
+{
+	/* Style for the skip link */
+	/*position: absolute;
+	left: -9000px;*/
+}
+.navigation
+{
+	/* Style for the navigation links (next/previous post) on a given post */
+}
+
+
+/*** CONTENT : COMMENTS ***/
+
+div#comments
+{
+	/* Style that affects the DIV containing all the comments */
+}
+.comments h3
+{
+	/* H3 header style for comments */
+}
+.comments ol
+{
+	/* Comments are displayed as ordered lists by default, so you want to style that list so it looks the way you want */
+}
+.comments ol li
+{
+	/* Style each list item in the comments ordered list */
+}
+.comments img
+{
+	/* Style for the user avatar beside each comment */
+	float: left;
+	margin: 0 12px 8px 0;
+}
+.comments .comment
+{
+	/* Style that applies to each individual comment in a series of comments */
+}
+
+.children ul li
+{
+	/* A style that refers to the children (as in, responses to) any given comment */
+}
+
+.comment-reply-link
+{
+	/* Style for the "Reply" link on a comment */
+}
+.comment-meta
+{
+	/* Style for metadata for a comment */
+}
+div#respond
+{
+	/* DIV that contains the comment response form */
+}
+div#respond h3
+{
+	/* H3 header for the comment response form */
+}

@@ -1,0 +1,240 @@
+/*** CONTENT : SIDEBAR ***/
+div#primary
+{
+	/* Primary Widget Area DIV */
+	width: 30%;
+}
+div#secondary
+{
+	/* Secondary Widget Area DIV */
+}
+.widget-container
+{
+	margin-bottom: 2em;
+}
+.widget-area .announcement {
+	background-color: #6950A1;
+	padding: 1em 1em 1.5em;
+	font-size: .9em;
+}
+.widget-title {
+	color: #6ecef4;
+	margin: .5em 0;
+}
+.widget-subtitle {
+	font-weight: 500;
+	font-size: 1em;
+	color: #9287C0;
+	margin: 0 0 .75em 0;
+}
+.widget-content {
+	background-color: #333;
+	padding: 1em;
+}
+.widget-content p {
+	font-size: .85em;
+	margin: 0;
+}
+.widget-cta {
+	display: block;
+	width: 100%;
+	background-color: #222;
+	padding: .5em;
+	box-sizing: border-box;
+	margin-top: 1.5em;
+	text-align: center;
+	color: #9287C0;
+	text-decoration: none;
+	font-size: .9em;
+}
+.xoxo
+{
+	/* Class that applies to each item in each widget area (an unordered list class) */
+	list-style: none;
+}
+
+.stream {
+	display: flex;
+	align-items: center;
+}
+.stream .fa-twitch {
+	color: #111;
+	margin-right: .5em;
+	font-size: 2em;
+}
+.stream + .stream {
+	margin-top: 1em;
+}
+.stream .widget-subtitle {
+	margin-bottom: 0;
+}
+.stream a {
+	text-decoration: none;
+	color: #6950A1;
+}
+.stream p {
+	color: #9c92ac;
+}
+
+h2 {
+	color: #9287C0;
+	margin-top: 0;
+}
+
+.social-icons {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1em;
+}
+
+.social-icons a {
+	text-decoration: none;
+}
+
+.widget_em_widget ul {
+	list-style: none;
+	padding: 0;
+}
+
+.widget_em_widget li {
+	margin-bottom: .5em;
+}
+
+.tournament-widget {
+	padding: .75em;
+}
+
+.tournament-widget h5 {
+	font-weight: 500;
+	font-size: 1em;
+	margin: 0;
+	color: #9287C0;
+}
+
+.tournament-widget .date {
+	font-size: .9em;
+	display: block;
+}
+
+.tournament-widget .actions {
+	width: 100%;
+	display: flex;
+	margin-top: 1em;
+	justify-content: space-between
+}
+
+.tournament-widget a {
+	width: 48%;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-size: .8em;
+}
+
+.tournament-widget .register {
+	padding: .5em 0;
+	background-color: #444;
+	color: #999;
+}
+
+.tournament-widget .view {
+	padding: .5em 0;
+	color: #999;
+	border: 1px solid #999;
+}
+
+.standings {
+	width: 100%;
+	color: #999;
+	border-collapse: collapse;
+	font-size: .9em;
+}
+
+.standings tr {
+	background-color: #333;
+	border-bottom: 2px solid #222;
+}
+
+.standings tr:last-child {
+	border-bottom: 0;
+}
+
+.standings td,
+.standings th {
+	padding: .5em .75em;
+}
+
+.standings tr td {
+	text-align: center;
+}
+
+.standings tr td:first-child {
+	font-weight: 700;
+	text-align: left;
+	color: #9287C0;
+}
+
+.standings tr th:first-child {
+	font-weight: 700;
+	text-align: left;
+}
+
+.standings tr td:last-child {
+	text-align: right;
+	font-weight: 700;
+	color: #9287C0;
+}
+
+.standings tr th:last-child {
+	text-align: right;
+	font-weight: 700;
+}
+
+.standings thead {
+	border-bottom: 1px solid #9287C0;
+	color: #6ecef4;
+}
+
+.standings thead tr {
+	border-bottom: 0;
+}
+
+.standings thead tr:first-child th:first-child div {
+	visibility: hidden;
+}
+.standings-mini {
+	font-size: .8em;
+}
+.standings-mini thead {
+	display: none;
+}
+
+.standings-mini-header {
+	display: flex;
+	justify-content: space-between;
+	font-size: .8em;
+	font-weight: 700;
+	color: #6ecef4;
+	padding: 1em .5em .5em;
+	background-color: #333;
+	border-bottom: 2px solid #9287C0;
+}
+
+.standings-mini-header ~ p {
+	display: none;
+}
+
+.standings-mini-footer {
+	padding: .75em .5em .5em;
+	background-color: #333;
+	width: 100%;
+	border-top: 2px solid #222;
+}
+
+.standings-mini-footer a {
+	font-size: .8em;
+	font-weight: 700;
+	color: #6ecef4;
+	text-decoration: none;
+}

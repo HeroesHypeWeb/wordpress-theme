@@ -1,0 +1,57 @@
+.css-events-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 2.5em 0 1em;
+    display: flex;
+}
+
+.events-list-item {
+    width: 250px;
+    background-color: #333333;
+    border-radius: 3px;
+    padding: 1.25em .5em;
+    text-align: center;
+    margin-right: 1.5em;
+}
+
+.events-list-item h4 {
+    margin: 0 0 .25em 0;
+    color: #6ecef4;
+}
+
+.events-list-item .fa-trophy {
+    font-size: 3.5em;
+    color: gold;
+    margin-bottom: .25em;
+}
+
+.events-list-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.events-list-links a {
+    /* width: 49%; */
+    flex: 1 1 50%;
+    margin: 0 .25em;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: .75em 0;
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.events-list-register {
+    background-color: #6950A1;
+}
+
+.events-list-view {
+    background-color: #777777;
+}
+
+.events-list-dates {
+    font-size: .9em;
+    font-weight: bold;
+}
