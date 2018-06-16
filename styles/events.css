@@ -3,6 +3,7 @@
     padding: 0;
     margin: 2.5em 0 1em;
     display: flex;
+    flex-flow: row wrap;
 }
 
 .events-list-item {
@@ -11,7 +12,9 @@
     border-radius: 3px;
     padding: 1.25em .5em;
     text-align: center;
-    margin-right: 1.5em;
+    margin-right: .5em;
+    margin-left: .5em;
+    margin-bottom: 1em
 }
 
 .events-list-item h4 {
