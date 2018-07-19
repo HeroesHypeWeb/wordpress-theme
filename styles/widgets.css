@@ -1,0 +1,77 @@
+/**
+Overrides for various widgets
+**/
+
+/** Team Braodcast List Test **/
+.widget_team_broadcast_status_list .usr-online {
+    background: #333333 !important;
+    border-radius: 3px;
+    height: unset !important;
+    padding: .5em !important;
+}
+
+.widget_team_broadcast_status_list .usr-online #user-title {
+    font-weight: 600;
+	font-size: 1em;
+	margin: 0;
+    color: #9287C0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.widget_team_broadcast_status_list .usr-online #current-game {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.widget_team_broadcast_status_list #icon {
+    display: none !important;
+}
+
+/** Wall Test **/
+#twitch-module.twitch-wall * {
+ font-family: "Montserrat" !important;
+}
+
+#twitch-module.twitch-wall .stream {
+    display: flex;
+    align-items: stretch;
+}
+
+#twitch-module.twitch-wall #stream-container ul li .twitch-meta {
+    height: unset !important;
+}
+
+#twitch-module.twitch-wall .twitch-game {
+    display: block;
+}
+
+#twitch-module.twitch-wall .twitch-info {
+    background-color: #333 !important;
+    border-radius: 0 3px 3px 0;
+}
+
+#twitch-module.twitch-wall .twitch-image {
+    border: 2px solid #333 !important;
+    border-radius: 3px 0 0 3px;
+}
+
+#twitch-module.twitch-wall .twitch-title {
+    font-size: .85em !important;
+    font-weight: bold !important;
+    position: unset !important;
+    color: #6ecef4 !important;
+    max-height: 3em !important;
+    height: 100% !important;
+}
+
+#twitch-module.twitch-wall .twitch-meta {
+    padding: .25em 0 0 0 !important;
+}
+
+#twitch-module.twitch-wall .twitch-name {
+    font-weight: bold;
+    color: #ffffff !important;
+}
